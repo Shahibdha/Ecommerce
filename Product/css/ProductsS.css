@@ -1,0 +1,397 @@
+
+.products
+{
+    justify-content: center;
+    color: black;
+    overflow: auto;
+    height: 600px;
+}
+
+.heading
+{
+    text-align: center;
+}
+
+/* .heading h2
+{
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+} */
+
+.product-container
+{
+    padding-left: 1rem;
+    width: 100% ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.product-container .box
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    justify-content: center;
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2));
+    color: #000c66;
+    border-radius: 0.5rem;
+    box-shadow: #000c66;
+    width: calc(25% - 1rem);
+    height: 400px;
+}
+
+.product-container img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.product-container .box h3
+{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.product-container .box .content
+{
+    justify-content: space-around;
+}
+
+.product-container .box .content span
+{
+    padding: 5px 1rem;
+    color: #000c66;
+    font-weight: 1000;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.product-container .box .content a
+{
+    padding: 2px;
+    color: #000c66;
+    border: 2px solid #0074B7;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 65px;
+    text-align: center;
+}
+
+.product-container .box .content a:hover
+{
+    background: #0074B7;
+    color: #000c66;
+    transition: 0.2s all linear;
+    border: 2px solid #000c66;
+}
+
+/* Responsive */
+
+/*Desktop*/
+/* @media (min-width: 1024px)
+{
+    .sidebar
+    {
+        margin-left: -295px;
+    }
+
+    .content
+    {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .sidebar + #mmenu
+    {
+        transform: translate(50px);
+    }
+
+    .content .top
+    {
+        flex-direction: column;
+    }
+
+    .content .search
+    {
+        padding-bottom: 25px;
+    }
+
+    #mmenu
+    {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        color: #FF1493;
+        position: relative;
+    }
+
+    .content .products
+    {
+        display: block;
+    }
+
+    .content .product
+    {
+        width: 100%;
+    }
+
+    .content .top .search input
+    {
+        padding: 10px 45px;
+    }
+
+    .content .top .search i
+    {
+        top: 16%;
+    }
+
+    .content .categories 
+    {
+        display: block;
+    }
+
+    .content .categories .category
+    {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .content .categories .category img
+    {
+        display: none;
+    }
+
+    .user 
+    {
+        display: flex;
+    }
+} */
+
+/*Phone*/
+@media (max-width: 768px)
+{
+    .content .top .search i
+    {
+        right: 140px;
+        top: 25%;
+    }
+
+    .sidebar
+    {
+        margin-left: -50px;
+    }
+
+    .content
+    {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .sidebar + #mmenu
+    {
+        transform: translate(50px);
+    }
+
+    .content .top
+    {
+        flex-direction: column;
+    }
+
+    .content .search
+    {
+        padding-bottom: 25px;
+    }
+
+    #mmenu
+    {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        color: #144bff;
+        position: relative;
+    }
+
+    .content .products
+    {
+        display: block;
+    }
+
+    .content .product
+    {
+        width: 100%;
+    }
+
+    .content .top .search input
+    {
+        padding: 10px 45px;
+    }
+
+    .content .top .search i
+    {
+        top: 16%;
+    }
+
+    .content .categories 
+    {
+        display: block;
+    }
+
+    .content .categories .category
+    {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .content .categories .category img
+    {
+        display: none;
+    }
+
+    .user 
+    {
+        display: flex;
+    }
+
+    .box
+    {
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+    height: 400px;
+    position: absolute;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 0.5rem;
+    }
+
+    .product-container img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        object-position: center;
+        padding: 20px;
+        border-radius: 0.5rem;
+    }
+
+    .product-container .box .content
+{
+    align-items: center;
+}
+
+}
+
+/*TABLETS*/
+@media ((min-width:767px) and (max-width: 1023px))
+{
+    .sidebar
+    {
+        margin-left: -295px;
+    }
+
+    .content
+    {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .sidebar + #mmenu
+    {
+        transform: translate(50px);
+    }
+
+    .content .top
+    {
+        flex-direction: column;
+    }
+
+    .content .search
+    {
+        padding-bottom: 25px;
+    }
+
+    #mmenu
+    {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        color: #144bff;
+        position: relative;
+    }
+
+    .content .products
+    {
+        display: block;
+    }
+
+    .content .product
+    {
+        width: 100%;
+    }
+
+    .content .top .search input
+    {
+        padding: 10px 45px;
+    }
+
+    .content .top .search i
+    {
+        top: 16%;
+    }
+
+    .content .categories 
+    {
+        display: block;
+    }
+
+    .content .categories .category
+    {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .content .categories .category img
+    {
+        display: none;
+    }
+
+    .user 
+    {
+        display: flex;
+    }
+    .box
+    {
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+    height: 400px;
+    position: absolute;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 0.5rem;
+    }
+
+    .product-container img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        object-position: center;
+        padding: 20px;
+        border-radius: 0.5rem;
+    }
+
+    .product-container .box .content
+{
+    align-items: center;
+}
+}

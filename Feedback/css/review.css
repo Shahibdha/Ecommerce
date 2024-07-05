@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.heading{
+    text-align:center;
+    font-size: 3.5rem;
+}
+
+span{
+    color: rgb(0, 38, 255);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.comment-box{
+    width: 70%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon i{
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.name strong {
+    color: black;
+    font-size: 18px;
+}
+
+.comment p {
+    color: black;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.comment-box .timestamp{
+    position: absolute; 
+    margin-top: -60px;
+    right: 10px !important;
+}
+.footer-col1 ul p{
+	margin-left: 50px;
+}
+.footer-col ul li a:hover,.footer-col1 ul p:hover{
+	color: #ffffff;
+	padding-left: 32px;
+}
+
+
+.progress-label-left
+{
+    float: left;
+    margin-right: 0.5em;
+    line-height: 1em;
+}
+.progress-label-right
+{
+    float: right;
+    margin-left: 0.3em;
+    line-height: 1em;
+}
+.star-light{
+	color:#e9ecef;
+}
+.star-widget{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 10px;    
+    flex-direction: row-reverse;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #2044D5;
+}
+input:checked ~ label{
+    color: #2044D5;
+}
+.image-preview {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #previewImage {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+

@@ -1,0 +1,73 @@
+h4{
+    color: #fff;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+.field{
+    width: 80%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0);
+    background-color: rgba(230,230,230,0.6);
+    font-size: 1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    margin-left: 10%;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.field input:focus,
+.field input:valid{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area{
+    min-height: 100px;
+}
+
+/* Add Item */
+.box
+{
+    padding: 1rem;
+    width: 50% ;
+    margin-top: 0.5rem;
+    margin-left: 10%;
+    background-image: linear-gradient(145deg, #000c66, #2482da,#000c66,rgb(145, 217, 241));
+    color: #fff;
+    border-radius: 15px;
+    justify-content: center;
+    height: 600px;
+    margin-left: 400px;
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 12px 28px ;
+    background: #000c66 ; 
+    border-radius: 10px;
+    border-color: #0074B7 ;
+    box-shadow: 0 0 10px #0074B7;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+h3
+{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
